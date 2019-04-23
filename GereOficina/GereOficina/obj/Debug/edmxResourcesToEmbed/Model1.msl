@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Cliente)">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NomeCliente" ColumnName="NomeCliente" />
+          <ScalarProperty Name="NifCliente" ColumnName="NifCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carros">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Carro)">
+        <MappingFragment StoreEntitySet="Carros">
+          <ScalarProperty Name="IdCarro" ColumnName="IdCarro" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Combustivel" ColumnName="Combustivel" />
+          <ScalarProperty Name="ClienteIdCliente" ColumnName="ClienteIdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicos">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Servico)">
+        <MappingFragment StoreEntitySet="Servicos">
+          <ScalarProperty Name="IdServico" ColumnName="IdServico" />
+          <ScalarProperty Name="TipoServico" ColumnName="TipoServico" />
+          <ScalarProperty Name="DataServico" ColumnName="DataServico" />
+          <ScalarProperty Name="CarroIdCarro" ColumnName="CarroIdCarro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parcelas">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Parcelas)">
+        <MappingFragment StoreEntitySet="Parcelas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotaParcela" ColumnName="TotaParcela" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="ServicoIdServico" ColumnName="ServicoIdServico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

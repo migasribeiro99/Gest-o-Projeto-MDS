@@ -1,0 +1,15 @@
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\GereOficina.exe.config
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\GereOficina.exe
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\GereOficina.pdb
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\EntityFramework.dll
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\EntityFramework.xml
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.csprojAssemblyReference.cache
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.Form1.resources
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.Properties.Resources.resources
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.csproj.GenerateResource.cache
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.csproj.CopyComplete
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.exe
+C:\Users\Miguel Ribeiro\Desktop\ESTG\2º Semestre 2018-2019\Desenvolvimento de Aplicações\PL\GereOficina\GereOficina\obj\Debug\GereOficina.pdb

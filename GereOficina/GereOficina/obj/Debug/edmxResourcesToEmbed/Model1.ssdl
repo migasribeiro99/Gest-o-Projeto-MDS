@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Clientes" EntityType="Model1.Store.Clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Carros" EntityType="Model1.Store.Carros" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Servicos" EntityType="Model1.Store.Servicos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Parcelas" EntityType="Model1.Store.Parcelas" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ClienteCarro" Association="Model1.Store.ClienteCarro">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Carro" EntitySet="Carros" />
+    </AssociationSet>
+    <AssociationSet Name="CarroServico" Association="Model1.Store.CarroServico">
+      <End Role="Carro" EntitySet="Carros" />
+      <End Role="Servico" EntitySet="Servicos" />
+    </AssociationSet>
+    <AssociationSet Name="ServicoParcelas" Association="Model1.Store.ServicoParcelas">
+      <End Role="Servico" EntitySet="Servicos" />
+      <End Role="Parcelas" EntitySet="Parcelas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeCliente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NifCliente" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carros">
+    <Key>
+      <PropertyRef Name="IdCarro" />
+    </Key>
+    <Property Name="IdCarro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Marca" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Modelo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Matricula" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Combustivel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClienteIdCliente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Servicos">
+    <Key>
+      <PropertyRef Name="IdServico" />
+    </Key>
+    <Property Name="IdServico" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoServico" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DataServico" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CarroIdCarro" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Parcelas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TotaParcela" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descricao" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ServicoIdServico" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteCarro">
+    <End Role="Cliente" Type="Model1.Store.Clientes" Multiplicity="1" />
+    <End Role="Carro" Type="Model1.Store.Carros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Carro">
+        <PropertyRef Name="ClienteIdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CarroServico">
+    <End Role="Carro" Type="Model1.Store.Carros" Multiplicity="1" />
+    <End Role="Servico" Type="Model1.Store.Servicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carro">
+        <PropertyRef Name="IdCarro" />
+      </Principal>
+      <Dependent Role="Servico">
+        <PropertyRef Name="CarroIdCarro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ServicoParcelas">
+    <End Role="Servico" Type="Model1.Store.Servicos" Multiplicity="1" />
+    <End Role="Parcelas" Type="Model1.Store.Parcelas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servico">
+        <PropertyRef Name="IdServico" />
+      </Principal>
+      <Dependent Role="Parcelas">
+        <PropertyRef Name="ServicoIdServico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
